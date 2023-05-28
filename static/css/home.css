@@ -1,0 +1,66 @@
+.main-form {
+    background-color: #28292a;
+    border-radius: 16px;
+    border: 1px solid #303134;
+    box-shadow: 0 0 70px #000;
+    width: 350px;
+    height: 450px;
+    padding: 12px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-form_title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.main-form_desc {
+    color: #777;
+    font-size: 12.5px;
+}
+
+.form-container {
+    margin-top: 20%;
+}
+
+.dropform {
+    margin-top: 3em;
+    border: 1px dashed #478dfc;
+    background-color: rgba(60, 61, 64, 0.4);
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 50px;
+    width: 300px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.dropform-centerfix {
+    margin-left: 4%;
+    width: 350px;
+}
+
+.dropform-desc {
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+.msgbox {
+    background-color: #212121;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 8px;
+    color: #fff;
+}
+
+.errbox {
+    background-color: #F44336;
+    color: #fff;
+    border: 0;
+}

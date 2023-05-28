@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./static/assets/favicon.svg" type="image/svg">
+    <title>Вивантажувач файлів</title>
+    <link rel="stylesheet" href="./static/css/base.css">
+    <link rel="stylesheet" href="./static/css/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main id="app">
+        <div class="main-form">
+            <div class="msgbox" data-i18n="fileistoobig" hidden>Розмір файлу більше ніж 128МіБ!</div>
+            <div class="form-container">
+                <h1 class="main-form_title" data-i18n="uploadfilestitle">Завантажте свої файли</h1>
+                <p class="main-form_desc" data-i18n="filemaxsize">Макс. розмір файлу: 128MiB</p>
+                <div class="dropform-centerfix">
+                    <div class="dropform" id="dropform_fileinputTrigger">
+                        <form action="/upload/" method="post" enctype="multipart/form-data">
+                            <input type="file" id="fileInput" autocomplete="off" name="files" hidden>
+
+                            <img src="./static/assets/folder_open.svg" alt="upload icon">
+                            <p class="main-form_desc dropform-desc" data-i18n="clicktofilechoose">
+                                Натисніть сюди щоб вибрати файл
+                            </p>
+                            <p class="main-form_desc dropform-desc" id="dropform_uploadedsize" hidden>0KiB</p>
+                            <button type="submit" id="dropform_submitbtn" hidden>submitbtn</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="./static/js/translatePage.js"></script>
+    <script src="./static/js/home.js"></script>
+</body>
+
+</html>
