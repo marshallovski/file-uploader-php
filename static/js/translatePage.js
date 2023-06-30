@@ -21,7 +21,7 @@ const strings = {
     }
 }
 
-const ukrlang = navigator.language.includes('uk');
+const ukrlang = navigator.language.includes('ua');
 const elementsToTranslate = document.querySelectorAll('[data-i18n]');
 
 if (ukrlang) {
