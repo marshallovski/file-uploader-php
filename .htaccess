@@ -1,0 +1,7 @@
+# on prod its should be off
+php_value display_errors Off
+Options -Indexes
+  
+ErrorDocument 500 "Internal Server Error"
+ErrorDocument 403 "You does not have rights to view this content"
+ErrorDocument 404 "Not found"
